@@ -1,0 +1,21 @@
+<section>
+    @if (estaLogueado){
+    <p>Bienvenido, {{username}}</p>
+    <img
+    (click)="greet()" 
+    src="https://github.com/NicoGGomez.png" 
+    alt="foto de user">
+    <app-game 
+    (eventoAgregaraFav)="recepcionarFav($event)"
+    username="{{username}}" 
+    />
+        @if (favGame !== ''){
+            <p>juego favorito {{favGame}}</p>
+        }
+
+    <button (click)="estaLogueado= false">deslogueate</button>
+} @else {
+    <p>Inicia sesion!!!</p>
+    <button (click)="estaLogueado= true">logueate</button>
+}
+</section>

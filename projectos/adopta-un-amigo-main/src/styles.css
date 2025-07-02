@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #FFDDAC;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}

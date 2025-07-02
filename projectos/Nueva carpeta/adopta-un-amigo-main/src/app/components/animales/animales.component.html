@@ -1,0 +1,36 @@
+<section>
+
+  <div class="contenedor-titulo">
+    <h2>Animales en adopción</h2>
+  </div>
+  
+  <div class="contenedor-gral">
+
+        @for (animal of animales; track animal.id){
+        <div class="contenedor-animal">
+
+          <div class="contenedor-texto">
+          <b>{{animal.nombre}}</b><p>{{animal.especie}}</p>
+
+          @if (animal.adoptado === true){
+          <p>adoptado</p>
+          }
+          <b>en adopcion</b>
+
+          <div class="contenedor-desc">
+            {{animal.descripcion}}
+          </div>
+          </div>
+
+          @if ( animal.especie == 'Perro' ) {
+          <img src="imgs/foto2.jpg" alt="">
+          } @else {
+          <img src="imgs/foto1.jpg" alt="">
+          }
+        </div>
+
+        }
+
+  </div> 
+
+</section>
